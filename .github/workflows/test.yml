@@ -9,7 +9,10 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
-        go-version: 1.15
+        go-version: 1.19
+
+     - name: Install
+      run: go mod tidy
 
     - name: Test and coverage
       run: go test -v ./... -cover -coverprofile coverage.out -json > test.json
