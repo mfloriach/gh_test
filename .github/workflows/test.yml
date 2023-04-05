@@ -1,8 +1,10 @@
 name: test
 on:
   push:
+    branches:
+      - main
 jobs:
-  coverage-test:
+  coverage:
     runs-on: ubuntu-latest
     container:
       image: golang:1.17-alpine
