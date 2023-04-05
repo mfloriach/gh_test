@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="1">
+	<testsuite name="gh_test" tests="0" failures="0" errors="0" id="0" hostname="ML-01021.local" time="0.000" timestamp="2023-04-05T12:08:37+09:00"></testsuite>
+	<testsuite name="gh_test/math" tests="3" failures="1" errors="0" id="1" hostname="ML-01021.local" time="0.108" timestamp="2023-04-05T12:08:37+09:00">
+		<testcase name="TestAdd" classname="gh_test/math" time="0.000">
+			<failure message="Failed"><![CDATA[    math1_test.go:14: got '\n', wanted '\v']]></failure>
+		</testcase>
+		<testcase name="TestAdd2" classname="gh_test/math" time="0.000"></testcase>
+		<testcase name="TestAdd3" classname="gh_test/math" time="0.000"></testcase>
+		<system-out><![CDATA[	gh_test/math	coverage: 100.0% of statements]]></system-out>
+	</testsuite>
+</testsuites>
